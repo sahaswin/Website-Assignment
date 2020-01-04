@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AdopteesLK</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+		<div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              <a href="index.html"><img class="logo" src="images/logo.png"></a>
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="Cats.html">About</a></li>
+                                    <li><a href="Dogs.html">Blog</a></li>
+                                    <li><a href="Contact.html">Contact Us</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+<br>
+                  <h1 id="mainhead">Welcome To AdopteesLK</h1>
+            </header>
+
+            <div class="content">
+                  <h2 class="homeh2">Who Are We?</h2>
+                  <p id="homep">
+                        We are a group of volunteers, who seeks out and reach out to pet in need of homes and care.<br> We treat injured,homeless and helpless animals and help them find loving homes where they can enjoy their lives whlist bringing joy their own owners.
+                  </p>
+                  		<div class="slidershow middle">
+					      <div class="slides">
+					        <input type="radio" name="r" id="r1" >
+					        <input type="radio" name="r" id="r2" >
+					        <input type="radio" name="r" id="r3">
+					        <div class="slide s1">
+					          <img src="images/img1.jpg" alt="">
+					        </div>
+					        <div class="slide">
+					          <img src="images/img2.jpg" alt="">
+					        </div>
+					        <div class="slide">
+					          <img src="images/img3.jpg" alt="">
+					        </div>
+					      </div>
+					      <div class="navigation">
+					        <label for="r1" class="bar"></label>
+					        <label for="r2" class="bar"></label>
+					        <label for="r3" class="bar"></label>
+					      </div>
+					    </div>
+
+<br>
+
+                  <h2 class="homeh2">Help our cause</h2><br>
+                  <p id="homep">
+                        We, "The AdopteesLK" do try our best and do our best to help these innocent lives. <br> Due to the lack of resources and budget we have only limited facilities availiable to provide. <br>
+                        But with your help we can achieve our targets on the well-being of homeless animals.
+                  </p><br>
+                  <h3 class="homeh3">Your Donations will help a dog's or a cat's well being.</h3>
+                  <center><a href="Contact.html"><button type="button" class="button">Donate Us!</button></a></center> 
+
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      </script>
+
+      <footer>
+      <div class="footer">
+            <div class="footer-content">
+                  <div class="footer-section about">
+                        <img class="flogo" src="images/logo.png"> 
+                        <p class="footertext">AdopteesLK provides homeless,helpless pets to find a place to call their home as well as loving masters their soul animals. </p>
+                  </div>
+
+                  <div class="footer-section links">
+                        <h1>Quick Links</h1>
+                        <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cats.html">Cats</a></li>
+                        <li><a href="dogs.html">Dogs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                  </div>
+
+                  <div class="footer-section socials">
+                        <h1>Our Social Media</h1>
+
+                        <a href="https://www.facebook.com"  target="_blank"><i class="fa fa-facebook-square" style="font-size:48px;color:#3b5998"></i></a>
+                              <a href="https://www.facebook.com" target="_blank"><p class="fb">Visit Us On Facebook</p></a>
+
+                        <a href="https://www.instagram.com"  target="_blank"><i class="fa fa-instagram" style="font-size:48px;color:black"></i>
+                              <a href="https://www.instagram.com" target="_blank"><p class="insta">Check Us On Instagram</p></a>
+
+                        </a>
+                  </div>
+
+
+            </div>
+            <div class="footer-bottom">
+                  &copy; AdopteesLK | Designed by Team Hellhounds
+            </div>
+      </div>
+ </footer>
+
+</body>
+</html>

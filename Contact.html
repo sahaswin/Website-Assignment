@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+			<div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              <a href="index.html"><img class="logo" src="images/logo.png"></a>
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="Cats.html">About</a></li>
+                                    <li><a href="Dogs.html">Blog</a></li>
+                                    <li><a href="Contact.html">Contact Us</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+<div class="title">
+		<h1>Contact Us</h1>
+	</div>
+
+	<div class="subheading">
+		<h2>Contact us to Donate.</h2>		
+	</div>
+
+
+		<form>
+			<table align="center">
+				<tr><td><input class="textbox" type="text" name="name" placeholder ="Your Name*"></td>
+				<td rowspan="3" align="center"><textarea class="textbox" rows="12" cols="30" placeholder="Your Message*"></textarea></td> </tr>
+
+				<tr><td><input class="textbox" type="email" name="email" placeholder="Your Email*"></td></tr>
+				<tr><td><input class="textbox" type="text" name="num" placeholder="Your Number*"></td></tr>
+				<tr><td colspan="2" align="center"><button id="submitButton">Send Message</button></td></tr>
+			</table>
+		</form>
+
+            </header>
+	
+	<script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+	
+	<footer>
+      <div class="footer">
+            <div class="footer-content">
+                  <div class="footer-section about">
+                        <img class="flogo" src="images/logo.png"> 
+                        <p class="footertext">AdopteesLK provides homeless,helpless pets to find a place to call their home as well as loving masters their soul animals. </p>
+                  </div>
+
+                  <div class="footer-section links">
+                        <h1>Quick Links</h1>
+                        <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cats.html">Cats</a></li>
+                        <li><a href="dogs.html">Dogs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                  </div>
+
+                  <div class="footer-section socials">
+                        <h1>Our Social Media</h1>
+
+                        <a href="https://www.facebook.com"  target="_blank"><i class="fa fa-facebook-square" style="font-size:48px;color:#3b5998"></i></a>
+                              <a href="https://www.facebook.com" target="_blank"><p class="fb">Visit Us On Facebook</p></a>
+
+                        <a href="https://www.instagram.com"  target="_blank"><i class="fa fa-instagram" style="font-size:48px;color:black"></i>
+                              <a href="https://www.instagram.com" target="_blank"><p class="insta">Check Us On Instagram</p></a>
+
+                        </a>
+                  </div>
+
+
+            </div>
+            <div class="footer-bottom">
+                  &copy; AdopteesLK | Designed by Team Hellhounds
+            </div>
+      </div>
+ </footer>
+
+
+</body>
+</html>
