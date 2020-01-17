@@ -22,6 +22,21 @@ header {
       background-size: cover;
 }
 
+#cat{
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(91,119,185,0.75),rgba(197,118,143,0.75)),url(images/cats/bg.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+#dog{
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(91,119,185,0.75),rgba(197,118,143,0.75)),url(images/dogs/bg.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+
 .content {
       width: 94%;
       margin: 4em auto;
@@ -31,22 +46,19 @@ header {
 }
 .logo img{
       height: 90px;
-      position: absolute;
+      position: fixed;
 
 }
 .logo {
-      line-height: 60px;
+      line-height: 0px;
       position: fixed;
+      top: 0;
       float: left;
-      margin: 0px 0px;
-      color: #fff;
-      font-weight: bold;
-      font-size: 20px;
-      letter-spacing: 2px; */
 }
 
 nav {
       position: fixed;
+      top: 0;
       width: 100%;
       line-height: 60px;
         z-index:10;
@@ -96,9 +108,9 @@ nav ul li a {
 @media(max-width: 786px) {
 
       .logo img{
-            position: fixed;
+            position: absolute;
             top: 0;
-            margin-top: 16px;
+            margin-top: 0px;
       }
 
       nav ul {
@@ -131,7 +143,11 @@ nav ul li a {
       text-align: center;
       font-size: 64px;
       font-family: Luna;
-      padding-top: 230px;
+      padding-top: 0;
+      position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
 }
 
 .homeh2{
@@ -145,6 +161,21 @@ nav ul li a {
 }
 
 .homeh3{
+      text-align: center;
+}
+
+.adopth2{
+      text-align: center;
+      font-family: Luna;
+      font-size: 25px;
+}
+
+#adoptp{
+      text-align: center;
+      font-size: 20px;
+}
+
+.adopth3{
       text-align: center;
 }
 
@@ -251,12 +282,41 @@ input[name="r"]{
   margin-left: -40%;
 }
 
+/*Cats CSS*/
+    #p-grid {
+       max-width: 1200px; 
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        align-self: center;
+      }
 
+      div.p-grid-in {
+        box-sizing: border-box;
+        margin: 5px; 
+        padding: 10px;
+        border: 1px solid #e8f0ff;
+        background: #f2f7ff;
+      }
+      img.p-img {
+        width: 100%;
+        height: auto;
+      }
+      div.p-name {
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      div.p-desc {
+        color: #888;
+        font-size: 0.9em;
+      }
 
-
-
-
-
+      @media only screen and (max-width: 1024px) {
+        #p-grid { grid-template-columns: 33% 33% 33%; }
+      }
+      @media only screen and (max-width: 600px) {
+        #p-grid { grid-template-columns: 50% 50%; }
+      }
 
 
 
@@ -359,13 +419,197 @@ transition-duration: 0.4s;
       color: rgba(255,255,255,0.5);
       font-family: Times New Roman;
       font-weight: none;
+
+
+
+
+}
+footer{
+  position: fixed;
+  bottom: 0;
+}
+ 
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+  background-color: #2c292f;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+  width: 30%;
+}
+ 
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+  width: 50%;
+}
+ 
+.footer-distributed h3 span{
+  color:  #5b77b9;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+  color:  #c5768f;
+  text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+  width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+ 
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+ 
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 880px) {
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+ 
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+ 
 }
 
 /* Footer */
+/*
 .footer{
       background:#343a40;
       height: 250px;
-      position: relative;
+      position: absolute;
 }
 
 .footer .footer-bottom{
@@ -420,7 +664,7 @@ transition-duration: 0.4s;
       text-align: left;
       padding-left: 50px;
         clear: both;
-        font-size: 20px;
+        font-size: 17px;
 }
 
 .socials{

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact Us</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<title>AdopteesLK</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
-			<div class="wrapper">
-            <header>
-
+		<div class="wrapper">
+            <header id="cat">
                   <nav>
-
                         <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
                         </div>
@@ -27,36 +25,65 @@
                                     <li><a href="Dogs.html">Dogs To Adopt</a></li>
                                     <li><a href="Contact.html">Contact Us</a></li>
                               </ul>
-                        </div>
+                 		</div>
                   </nav>
 
-<div class="title">
-		<h1>Contact Us</h1>
-	</div>
-
-	<div class="subheading">
-		<h2>Contact us to Donate.</h2>		
-	</div>
-
-
-		<form>
-			<table align="center">
-				<tr><td><input class="textbox" type="text" name="name" placeholder ="Your Name*"></td>
-				<td rowspan="3" align="center"><textarea class="textbox" rows="12" cols="30" placeholder="Your Message*"></textarea></td> </tr>
-
-				<tr><td><input class="textbox" type="email" name="email" placeholder="Your Email*"></td></tr>
-				<tr><td><input class="textbox" type="text" name="num" placeholder="Your Number*"></td></tr>
-				<tr><td colspan="2" align="center"><button id="submitButton">Send Message</button></td></tr>
-			</table>
-		</form>
-
+<br>
+                  <h1 id="mainhead">Cats To Adopt</h1>
             </header>
-	
-	<script type="text/javascript">
+        </div>
 
-      // Menu-toggle button
+<br>
+<br>
+            	 <h2 class="adopth2">Are you looking for a cute cat for your home?</h2>
+                  <p id="adoptp">
+                        We have found these cats from various where they had nobody to look after and we treated them. <br> We hope that you'll your future pet cat from here and help these innocent souls by giving them a place to stay and food to eat.
+                  </p>
+<br>
+         <div id="p-grid">
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/cats/adopt1.jpg"/>
+			        <div class="p-name">Male Ginger Cat</div>
+			        <div class="p-desc">1 year old male cat up for FREE adoption in Nugegoda. Current owner is unable to accommodate “Kitty” due to their living situation.
+</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/cats/adopt2.jpg"/>
+			        <div class="p-name">2 Female Kitties</div>
+			        <div class="p-desc">2 female 5-month-old kitties up for FREE adoption in Ragama.</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/cats/adopt3.jpg"/>
+			        <div class="p-name">3 Week old Kitten</div>
+			        <div class="p-desc">3-week-old male kitten up for URGENT foster care in Pepiliyana and is on the look out for a home willing to nurse him.</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/cats/adopt4.jpg"/>
+			        <div class="p-name">1-month-old female kitten</div>
+			        <div class="p-desc">up for URGENT foster care in Ettukala, Negombo and is on the look out for a home willing to nurse her. Potty trained!</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/cats/adopt5.jpg"/>
+			        <div class="p-name">Two 4-month-old female kittens</div>
+			        <div class="p-desc">Two 4-month-old female kittens up for FREE adoption in Nugegoda. Sterilized.</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/cats/adopt6.jpg"/>
+			        <div class="p-name">Beautiful 5-month-old female kitten</div>
+			        <div class="p-desc">Beautiful tortoiseshell 5-month-old female kitten ABANDONED on a busy road at Pannipitiya Junction. Up for FREE adoption.</div>
+			      </div></div>
+    		</div>
+<br>
 
-      $(document).ready(function() {
+				<h2 class="adopth2"> A catto here stole your heart?</h2>
+				<p id="adoptp">Contact us to take him/her home</p>
+                <center><a href="Contact.html"><button type="button" class="button">Contact Us!</button></a></center> 
+
+
+                  <!--JS -->
+      <script type="text/javascript">
+
+                   $(document).ready(function() {
             $(".menu-icon").on("click", function() {
                   $("nav ul").toggleClass("showing");
             });
@@ -73,11 +100,9 @@
                   $('nav').removeClass('black');
             }
       })
-
-
       </script>
-	
-   <footer class="footer-distributed">
+
+ <footer class="footer-distributed">
  
                   <div class="footer-left">
                    <img src="images/logo.png">

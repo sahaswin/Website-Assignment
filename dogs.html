@@ -8,10 +8,8 @@
 </head>
 <body>
 		<div class="wrapper">
-            <header>
-
+            <header id="dog">
                   <nav>
-
                         <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
                         </div>
@@ -23,61 +21,70 @@
                         <div class="menu">
                               <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="Cats.html">Cats To Adopt</a></li>
+                                    <li><a href="Cogs.html">Cats To Adopt</a></li>
                                     <li><a href="Dogs.html">Dogs To Adopt</a></li>
                                     <li><a href="Contact.html">Contact Us</a></li>
                               </ul>
-                        </div>
+                 		</div>
                   </nav>
+
 <br>
-                  <h1 id="mainhead">Welcome To AdopteesLK</h1>
+                  <h1 id="mainhead">Dogs To Adopt</h1>
             </header>
-
-            <div class="content">
-                  <h2 class="homeh2">Who Are We?</h2>
-                  <p id="homep">
-                        We are a group of volunteers, who seeks out and reach out to pet in need of homes and care.<br> We treat injured,homeless and helpless animals and help them find loving homes where they can enjoy their lives whlist bringing joy their own owners.
-                  </p>
-                  		<div class="slidershow middle">
-					      <div class="slides">
-					        <input type="radio" name="r" id="r1" >
-					        <input type="radio" name="r" id="r2" >
-					        <input type="radio" name="r" id="r3">
-					        <div class="slide s1">
-					          <img src="images/img1.jpg" alt="">
-					        </div>
-					        <div class="slide">
-					          <img src="images/img2.jpg" alt="">
-					        </div>
-					        <div class="slide">
-					          <img src="images/img3.jpg" alt="">
-					        </div>
-					      </div>
-					      <div class="navigation">
-					        <label for="r1" class="bar"></label>
-					        <label for="r2" class="bar"></label>
-					        <label for="r3" class="bar"></label>
-					      </div>
-					    </div>
+        </div>
 
 <br>
+<br>
+            	 <h2 class="adopth2">Are you looking for a playful dog for your home?</h2>
+                  <p id="adoptp">
+                        We have found these dogs from various where they had nobody to look after and we treated them. <br> We hope that you'll your future pet doggo from here and help these innocent souls by giving them a place to stay and food to eat.
+                  </p>
+<br>
+         <div id="p-grid">
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/dogs/adopt1.jpg"/>
+			        <div class="p-name">A male and 2 female pups </div>
+			        <div class="p-desc">A male and 2 female pups in search of foster care and on the look out for homes that are willing to nurse them.They are 1 month old and are being nursed by a foster located in Panadura.
+</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/dogs/adopt2.jpg"/>
+			        <div class="p-name">Two 3-month old female pups</div>
+			        <div class="p-desc">Two 3-month old female pups ABANDONED at Kadawatha. No food or shelter. Urgently up for FREE adoption. Vaccinated. Beautiful and healthy.</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/dogs/adopt3.jpg"/>
+			        <div class="p-name">8 weeks old puppies</div>
+			        <div class="p-desc">8 weeks old puppies up for FREE adoption at Colombo 13. 4 males.</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/dogs/adopt4.jpg"/>
+			        <div class="p-name">10 month old sterilized female Dog</div>
+			        <div class="p-desc">1 year and 10 month old sterilized female beauty up for FREE adoption in Moratuwa. Playful and energetic. Cross-breed - Pedigree unknown.</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/dogs/adopt5.jpg"/>
+			        <div class="p-name">A few weeks old puppies</div>
+			        <div class="p-desc">Abandoned at the Ceylon Electricity Board, Maligawatta. In danger as a lot of vehicles travel through the area.URGENTLY looking for homes.</div>
+			      </div></div>
+			      <div class="p-grid"><div class="p-grid-in">
+			        <img class="p-img" src="images/dogs/adopt6.jpg"/>
+			        <div class="p-name">18 month old sterilized “Tashi”
+              </div>
+			        <div class="p-desc">Up for FREE adoption in Moratuwa. Butter-colored beauty. Spayed and vaccinated. Can deliver.</div>
+			      </div></div>
+    		</div>
+<br>
 
-                  <h2 class="homeh2">Help our cause</h2><br>
-                  <p id="homep">
-                        We, "The AdopteesLK" do try our best and do our best to help these innocent lives. <br> Due to the lack of resources and budget we have only limited facilities availiable to provide. <br>
-                        But with your help we can achieve our targets on the well-being of homeless animals.
-                  </p><br>
-                  <h3 class="homeh3">Your Donations will help a dog's or a cat's well being.</h3>
-                  <center><a href="Contact.html"><button type="button" class="button">Donate Us!</button></a></center> 
+				<h2 class="adopth2"> A doggie here stole your heart?</h2>
+				<p id="adoptp">Contact us to take him/her home</p>
+                <center><a href="Contact.html"><button type="button" class="button">Contact Us!</button></a></center> 
 
-            </div>
-      </div>
 
+                  <!--JS -->
       <script type="text/javascript">
 
-      // Menu-toggle button
-
-      $(document).ready(function() {
+                   $(document).ready(function() {
             $(".menu-icon").on("click", function() {
                   $("nav ul").toggleClass("showing");
             });
@@ -105,7 +112,7 @@
                         <p class="footer-links">
                               <a href="index.html">Home</a>
                               |
-                              <a href="Cats.html">Cats To Adopt</a>
+                              <a href="dogs.html">dogs To Adopt</a>
                               |
                               <a href="dogs.html">Dogs To Adopt</a>
                               |
@@ -141,7 +148,6 @@
                         </div>
                   </div>
             </footer>
-
 
 </body>
 </html>
