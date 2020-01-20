@@ -39,14 +39,14 @@
 	</div>
 
 
-		<form>
+		<form method="POST" action="contactUs.php">
 			<table align="center">
 				<tr><td><input class="textbox" type="text" name="name" placeholder ="Your Name*"></td>
-				<td rowspan="3" align="center"><textarea class="textbox" rows="12" cols="30" placeholder="Your Message*"></textarea></td> </tr>
+				<td rowspan="3" align="center"><textarea name="msg" class="textbox" rows="12" cols="30" placeholder="Your Message*"></textarea></td> </tr>
 
 				<tr><td><input class="textbox" type="email" name="email" placeholder="Your Email*"></td></tr>
 				<tr><td><input class="textbox" type="text" name="num" placeholder="Your Number*"></td></tr>
-				<tr><td colspan="2" align="center"><button id="submitButton">Send Message</button></td></tr>
+				<tr><td colspan="2" align="center"><button type="submit" id="submitButton">Send Message</button></td></tr>
 			</table>
 		</form>
 
